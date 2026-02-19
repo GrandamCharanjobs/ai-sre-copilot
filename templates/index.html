@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🚀 AI SRE Co-Pilot - Incident Command Center</title>
+    <meta http-equiv="refresh" content="10">
+    <style>
+        body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto; margin: 40px; background: #0d1117; color: #c9d1d9; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+        .metric { background: #21262d; padding: 15px 20px; border-radius: 8px; text-align: center; }
+        .incidents { display: grid; gap: 20px; }
+        .incident { background: #161b22; padding: 25px; border-radius: 12px; border-left: 5px solid; }
+        .sev1 { border-left-color: #f85149; }
+        .sev2 { border-left-color: #facc15; }
+        .sev3 { border-left-color: #3fb950; }
+        .ai-summary { background: #0d1117; padding: 15px; border-radius: 6px; margin: 15px 0; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 AI SRE Co-Pilot</h1>
+        <div>
+            <div class="metric">
+                <div style="font-size: 24px; font-weight: bold;" id="alert-count">0</div>
+                <div>Alerts</div>
+            </div>
+            <div class="metric">
+                <div style="font-size: 24px; font-weight: bold;" id="incident-count">0</div>
+                <div>Incidents</div>
+            </div>
+        </div>
+    </div>
+    
+    <h2>🔔 Active Incidents</h2>
+    <div class="incidents" id="incidents">
+        <div class="incident sev2">
+            <h3>INC-001 | SEV2 | API Latency Spike (us-east-1)</h3>
+            <div class="ai-summary">
+                🤖 AI: 3 alerts correlated → 78% confidence deployment regression (deploy #123)
+            </div>
+            <p><strong>Runbook:</strong> Rollback deploy #123 | Scale API replicas to 10</p>
+            <p><strong>MTTR:</strong> 4m32s | <strong>Status:</strong> Investigating</p>
+        </div>
+        <div class="incident sev1">
+            <h3>INC-002 | SEV1 | Database Connection Pool Exhausted</h3>
+            <div class="ai-summary">
+                🤖 AI: postgres-cluster saturated → 92% confidence connection leak
+            </div>
+            <p><strong>Runbook:</strong> Restart connection pool | Scale postgres to 3 replicas</p>
+            <p><strong>MTTR:</strong> 2m18s | <strong>Status:</strong> Active</p>
+        </div>
+    </div>
+</body>
+</html>
