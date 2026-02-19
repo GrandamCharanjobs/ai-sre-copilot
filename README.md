@@ -9,3 +9,17 @@
 - [ ] Alert correlation → SEV1-3 classification (70% faster triage)
 - [ ] Auto-root cause analysis + runbook generation  
 - [ ] Slack incident notifications + postmortem drafts
+
+## 📸 LIVE DEMO
+
+| Dashboard | Swagger API Docs |
+|-----------|------------------|
+| ![Dashboard](screenshot-dashboard.png) | ![Swagger](screenshot-swagger.png) |
+
+## 🚀 PRODUCTION STATUS
+✅ FastAPI + SQLite + Jinja2 stack
+✅ SEV1/SEV2 incident ingestion (curl-tested)
+✅ Dark GitHub theme SRE dashboard
+✅ Auto Swagger/ReDoc documentation
+✅ 6-hour build → Staff SRE portfolio
+
